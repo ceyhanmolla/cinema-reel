@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Motion Studio</title>
+  <meta name="description" content="Get in touch with Motion Studio for film projects and collaborations.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Glassmorphism Navbar -->
+  <nav class="glass-navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <svg class="logo-svg" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="12" height="24" rx="2" fill="white" opacity="0.95"/>
+          <rect x="16" y="4" width="12" height="32" rx="2" fill="white" opacity="0.95"/>
+          <rect x="32" y="8" width="12" height="24" rx="2" fill="white" opacity="0.95"/>
+          <rect x="48" y="12" width="12" height="16" rx="2" fill="white" opacity="0.5"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </div>
+  </nav>
+
+  <div id="app">
+    <div class="gradient-top"></div>
+    <div class="gradient-bottom"></div>
+    
+    <div class="film-strip-wrapper">
+      <div class="film-strip" id="filmStrip">
+        <!-- Slide 1: Hero -->
+        <div class="film-card-wrapper" data-index="0">
+          <div class="film-card">
+            <div class="film-card-image">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/fa51902b-c2a4-4c33-a96e-a8f1ef67edc6_1600w.jpg" alt="Contact">
+            </div>
+            <div class="film-card-overlay"></div>
+            <div class="film-card-content">
+              <div class="card-corner top-left">
+                <div class="corner-label">Contact</div>
+                <div class="corner-title">Get in<br>Touch</div>
+              </div>
+              <div class="card-corner bottom-left">
+                <div class="corner-text">We'd love to hear from you. Let's collaborate.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Contact Info -->
+        <div class="film-card-wrapper" data-index="1">
+          <div class="film-card">
+            <div class="film-card-image">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/d14dc069-558a-4c51-8aad-5cc237f9b61d_1600w.jpg" alt="Contact Info">
+            </div>
+            <div class="film-card-overlay"></div>
+            <div class="film-card-content">
+              <div class="card-corner top-right">
+                <div class="corner-label">Reach Us</div>
+                <div class="corner-title">Let's<br>Connect</div>
+              </div>
+              <div class="card-corner bottom-right">
+                <ul class="contact-info">
+                  <li><a href="mailto:hello@motion.studio">hello@motion.studio</a></li>
+                  <li>+1 (555) 123-4567</li>
+                  <li>Mon - Fri: 9am - 6pm PST</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Location -->
+        <div class="film-card-wrapper" data-index="2">
+          <div class="film-card">
+            <div class="film-card-image">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg" alt="Location">
+            </div>
+            <div class="film-card-overlay"></div>
+            <div class="film-card-content">
+              <div class="card-corner top-right">
+                <div class="corner-label">Visit Us</div>
+                <div class="corner-title">Our<br>Studio</div>
+              </div>
+              <div class="card-corner bottom-right">
+                <div class="location-info">
+                  123 Film Street<br>
+                  Los Angeles, CA 90028<br>
+                  United States
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Social -->
+        <div class="film-card-wrapper" data-index="3">
+          <div class="film-card">
+            <div class="film-card-image">
+              <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e534354d-c5f2-4399-a1d9-2f50338e8c47_1600w.jpg" alt="Social">
+            </div>
+            <div class="film-card-overlay"></div>
+            <div class="film-card-content">
+              <div class="card-corner top-left">
+                <div class="corner-label">Follow Us</div>
+                <div class="corner-title">Stay<br>Updated</div>
+              </div>
+              <div class="card-corner bottom-left">
+                <div class="social-links">
+                  <a href="#" class="social-link">Instagram</a>
+                  <a href="#" class="social-link">IMDB</a>
+                  <a href="#" class="social-link">Vimeo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+      <div class="scroll-progress-track">
+        <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+      </div>
+      <span class="scroll-progress-text" id="scrollProgressText">01 / 04</span>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="nav-dots">
+      <button class="nav-dot active" data-index="0">01</button>
+      <button class="nav-dot" data-index="1">02</button>
+      <button class="nav-dot" data-index="2">03</button>
+      <button class="nav-dot" data-index="3">04</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

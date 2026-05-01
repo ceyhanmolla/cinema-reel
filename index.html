@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinema Reel — Motion</title>
+  <meta name="description" content="A vertical film-portfolio slider with cinematic snap-physics.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Glassmorphism Navbar -->
+  <nav class="glass-navbar">
+    <div class="nav-logo">
+      <a href="index.html">
+        <svg class="logo-svg" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="8" width="12" height="24" rx="2" fill="white" opacity="0.95"/>
+          <rect x="16" y="4" width="12" height="32" rx="2" fill="white" opacity="0.95"/>
+          <rect x="32" y="8" width="12" height="24" rx="2" fill="white" opacity="0.95"/>
+          <rect x="48" y="12" width="12" height="16" rx="2" fill="white" opacity="0.5"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+  </nav>
+  
+  <div id="app">
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <span class="scroll-indicator-text">Scroll</span>
+      <div class="scroll-indicator-mouse">
+        <div class="scroll-indicator-wheel"></div>
+      </div>
+    </div>
+
+    <!-- Gradient overlays -->
+    <div class="gradient-top"></div>
+    <div class="gradient-bottom"></div>
+    
+    <!-- Film Strip Container -->
+    <div class="film-strip-wrapper">
+      <div class="film-strip" id="filmStrip">
+        <!-- Film cards will be injected by JS -->
+      </div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+      <div class="scroll-progress-track">
+        <div class="scroll-progress-fill" id="scrollProgressFill"></div>
+      </div>
+      <span class="scroll-progress-text" id="scrollProgressText">01 / 06</span>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="nav-dots">
+      <button class="nav-dot active" data-index="0">01</button>
+      <button class="nav-dot" data-index="1">02</button>
+      <button class="nav-dot" data-index="2">03</button>
+      <button class="nav-dot" data-index="3">04</button>
+      <button class="nav-dot" data-index="4">05</button>
+      <button class="nav-dot" data-index="5">06</button>
+    </div>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
